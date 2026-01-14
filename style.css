@@ -1,0 +1,163 @@
+/* --- Resetare stiluri implicite --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Font și culori generale --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0b0c27; /* fundal întunecat spațial */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* --- Header și navigație --- */
+header {
+    background-color: #1b1c45;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #3a3b72;
+    color: #fff;
+}
+
+/* --- Main content --- */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #f5d742; /* galben spațial */
+}
+
+section h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #a0c4ff;
+}
+
+section p, section ul {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+/* --- Imagini --- */
+section img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+/* --- Hero section special --- */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* --- Formular contact --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3a3b72;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #f5d742;
+    color: #000;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #1b1c45;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* --- Galerie multimedia --- */
+section img[style] {
+    width: 45%;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    section img[style] {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
